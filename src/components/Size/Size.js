@@ -3,7 +3,7 @@ import './Size.css';
 
 const Size = ({size}) => {
 	return (
-		<p>SIZE <span>*</span>{size}</p>
+		<p id='sizeText'>SIZE <span>*</span>{size}</p>
 	)
 
 }

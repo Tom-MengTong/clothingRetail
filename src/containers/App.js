@@ -9,7 +9,12 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      selectedSize: ''
+      selectedSize: '',
+      cart:{
+        sNumber:0,
+        mNumber:0,
+        lNumber:0
+      }
     }
   }
   changeSize = (size) => {
@@ -17,11 +22,25 @@ class App extends Component {
       selectedSize: size
     })
   }
+  addCart = (size) => {
+    const sNumber=this.cart.sNumber;
+    const mNumber=this.cart.mNumber;
+    const lNumber=this.cart.lNumber;
+      if(size==='s'){
+        this.setState(Object.assign(this.state.cart,{sNumber: sNumber+1}))
+      }
+      if(size==='m'){
+        this.setState(Object.assign(this.state.cart,{sNumber: mNumber+1}))
+      }
+      if(size==='l'){
+        this.setState(Object.assign(this.state.cart,{sNumber: lNumber+1}))
+      }
+    }
   render(){
     return (
       <div >
-        <Navigation />
-        <Content size={this.state.selectedSize} changeSize={this.changeSize} />             
+        <Navigation cart={this.state.cart}/>
+        <Content size={this.state.selectedSize}  changeSize={this.changeSize} addCart={this.addCart} />             
       </div>
     )
   }

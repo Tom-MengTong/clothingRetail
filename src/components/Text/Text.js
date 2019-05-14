@@ -6,6 +6,7 @@ import Description from '../Description/Description';
 import Price from '../Price/Price';
 import Title from '../Title/Title';
 import Size_button_S from '../Size_button_S/Size_button_S';
+import Line from '../Line/Line';
 
 
 class Text extends Component {
@@ -18,11 +19,12 @@ class Text extends Component {
 		return(
 			<div id='text'>
 				<Title />
-				<hr />
+				<Line />
 				<Price />
+				<Line />
 				<Description />
 				<Size size={size}  />
-				<Size_button_S changeSize={changeSize} />
+				<Size_button_S changeSize={changeSize} addCart={this.props.addCart}/>
 			</div>
 		)
 	} 

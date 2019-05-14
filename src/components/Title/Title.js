@@ -1,10 +1,10 @@
 import React from 'react';
-// import './Title.css';
+import './Title.css';
 
 const Title = () => {
 	return(
 		<div>
-			<h1>Classic Tee</h1>
+			<h3 id='title'>Classic Tee</h3>
 		</div>
 	)
 }

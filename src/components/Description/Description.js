@@ -4,7 +4,7 @@ import './Description.css';
 const Description = () => {
 	return(
 		<div>
-			<p>
+			<p id='discription'>
 				This is description
 			</p>
 		</div>

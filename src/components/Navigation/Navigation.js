@@ -20,6 +20,7 @@ class Navigation extends Component{
 	    };
   	}
   	render(){
+  		const {sNumber,mNumber,lNumber} = this.props.cart;
   		return(
   			<div>
   				<nav id='nav' className='mv3' style={{display:'flex', justifyContent:'flex-end'}}>
@@ -32,7 +33,7 @@ class Navigation extends Component{
 				{this.state.isHovering &&	
 				// <div id='miniCart' style={{display:'flex', justifyContent:'flex-end', 'z-index': '1'}}>		
 				<div className='tooltip' id='miniCart' style={{display:'inline-block','z-index': '1',float:'right',width:'20%'}}>		
-		        	<MiniCart />
+		        	<MiniCart sNumber={sNumber}mNumber={mNumber}lNumber={lNumber} />
 				</div>}
   			</div>
 			

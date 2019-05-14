@@ -4,7 +4,7 @@ import React from 'react';
 const Price = () => {
 	return(
 		<div>
-			<p>$75</p>
+			<p><strong>$75</strong></p>
 		</div>
 	)
 }

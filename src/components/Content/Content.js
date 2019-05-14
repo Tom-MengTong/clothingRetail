@@ -13,7 +13,7 @@ class Content extends Component {
 		return(
 			<div id='content'>
 				<img src={tee} />
-				<Text size={this.props.size} changeSize={changeSize}/>
+				<Text size={this.props.size} changeSize={changeSize} addCart={this.props.addCart}/>
 			</div>
 		)
 	} 

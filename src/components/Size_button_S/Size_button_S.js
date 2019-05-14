@@ -1,20 +1,20 @@
 import React from 'react';
 import './Size_button_S.css';
 
-const Size_button_S = ({changeSize}) => {
+const Size_button_S = ({changeSize,addCart}) => {
 	return (
-		<div>
-			<input type='radio' name='size' value='S' onClick={()=>changeSize('S')}/>
+		<form id='buttonText'>
+			<input id='firstButton'className='sizeButton' type='radio' name='size' value='s' onClick={()=>changeSize('S')}/>
 			S
 			
-			<input type='radio' name='size' value='M' onClick={()=>changeSize('M')}/>
+			<input className='sizeButton' type='radio' name='size' value='m' onClick={()=>changeSize('M')}/>
 			M
 			
-			<input type='radio' name='size' value='L' onClick={()=>changeSize('L')}/>
+			<input className='sizeButton' type='radio' name='size' value='l' onClick={()=>changeSize('L')}/>
 			L
 			<br/>
-			<input id='button' type='submit' value='Add to chart' />
-		</div>	
+			<input id='button' type='submit' value='Add to chart' onClick={()=>addCart()}/>
+		</form>	
 	)
 }
 

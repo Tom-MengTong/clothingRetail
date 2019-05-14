@@ -8,3 +8,17 @@
 	background-color: orange;
 	color: black;
 }
+
+.sizeButton{
+	margin-right: 5px;
+	margin-left:10px;
+	margin-bottom: 20px;
+}
+
+#firstButton{
+	margin-left: 0;
+}
+
+#buttonText{
+	color:#888888;
+}
