@@ -23,9 +23,9 @@ class App extends Component {
     })
   }
   addCart = (size) => {
-    const sNumber=this.cart.sNumber;
-    const mNumber=this.cart.mNumber;
-    const lNumber=this.cart.lNumber;
+    const sNumber=this.state.cart.sNumber;
+    const mNumber=this.state.cart.mNumber;
+    const lNumber=this.state.cart.lNumber;
       if(size==='s'){
         this.setState(Object.assign(this.state.cart,{sNumber: sNumber+1}))
       }

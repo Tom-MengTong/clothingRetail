@@ -21,7 +21,7 @@ const MiniCart = (props) => {
 				<div style={{'margin-left':'10px'}}>
 					<p>Classic Tee</p>
 					<p>{mNumber}x <strong>$75</strong></p>
-					<p>Size: L</p>
+					<p>Size: M</p>
 				</div>
 			</div>
 			<div id='MiniCart' style={{width:'30%',height:'auto',display:'flex', 'flex-direction':'row'}}>			
